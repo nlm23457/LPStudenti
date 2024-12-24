@@ -70,10 +70,15 @@ async function aggiornaColoreCorsi() {
       const partecipanti = corsoData.partecipanti || [];
 
       // Cambia il colore di sfondo se i partecipanti superano 20
-      if (partecipanti.length > 0) {
+      if (partecipanti.length > 24) {
         corso.style.backgroundColor = "red";
         corso.style.borderColor = "red";
         corso.style.color = "white";
+
+        const button = corso.querySelector(".iscriviti-btn");
+        button.style.display = "none";
+
+        console.log(corso);
       } else {
         corso.style.backgroundColor = ""; // Resetta al colore originale
       }
@@ -113,7 +118,7 @@ async function iscriviAlCorso(corsoId, userData) {
   const corsoData = corsoSnap.data();
   const partecipanti = corsoData.partecipanti || [];
 
-  if (partecipanti.length >= 0) {
+  if (partecipanti.length >= 24) {
     alert("Il corso è già pieno (max 20 partecipanti).");
     return;
   }
