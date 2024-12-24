@@ -1,0 +1,124 @@
+body {
+  padding-top: 100px;
+  display: none;
+}
+
+#signUpMessage,
+#signInMessage {
+  color: red;
+  font-size: 14px; /* Dimensione del testo proporzionata */
+  text-align: center;
+  height: auto; /* Altezza automatica per adattarsi al contenuto */
+  max-width: 360px; /* Larghezza massima limitata per non allungare il messaggio */
+  margin-bottom: 10px; /* Spaziatura inferiore per separare il messaggio dagli input */
+  padding: 5px 10px; /* Leggera imbottitura per dare spazio al testo */
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.1
+  ); /* Sfondo leggero per evidenziare il messaggio senza essere invasivo */
+  border: 1px solid red; /* Bordo sottile per delineare il messaggio */
+  border-radius: 5px; /* Angoli arrotondati per un design più morbido */
+  display: none;
+}
+
+.log-in-container {
+  width: 460px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(200, 200, 200);
+  margin: 0 auto 72px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-title {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 34px;
+  margin: 26px 0;
+}
+
+.input-field {
+  color: #432000;
+  background-color: #dce1eb;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 360px;
+  margin: 10px auto;
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.log-in-container input:hover {
+  box-shadow: 0px 0px 2px rgb(160, 160, 160);
+}
+
+#submitSignIn,
+#submitSignUp {
+  width: 360px;
+  height: 48.5px;
+  margin: 10px 0 20px 0;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: var(--first-color);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+#signInButton,
+#signUpButton {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#submitSignIn:hover,
+#submitSignUp:hover {
+  box-shadow: 0px 0px 2px rgb(133, 133, 133);
+}
+
+.log-in-container i {
+  position: absolute;
+}
+
+.links {
+  margin-bottom: 30px;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-group > input {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 499px) {
+  body {
+    padding-top: 50px;
+  }
+  .log-in-container {
+    width: auto;
+    margin: 0 16px 40px 16px;
+  }
+  .input-field {
+    width: 100%;
+    min-width: 290px;
+    font-size: 13px;
+  }
+
+  #submitSignIn,
+  #submitSignUp {
+    width: 100%;
+    min-width: 290px;
+  }
+}

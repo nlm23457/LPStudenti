@@ -1,0 +1,78 @@
+body {
+  padding-top: 72px;
+}
+
+#infos-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.titolo-partecipanti {
+  margin-bottom: 18px;
+}
+
+.sottotitolo-partecipanti {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#lista-partecipanti {
+  padding: 20px;
+}
+
+.partecipanti-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  max-width: 1140px;
+  padding: 0 20px;
+}
+
+.partecipanti-table th,
+.partecipanti-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.partecipanti-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.partecipanti-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.partecipanti-table tr:hover {
+  background-color: #ddd;
+}
+
+#genera-pdf-btn {
+  width: 200px;
+  height: 40.5px;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: var(--first-color);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 40px auto;
+  transition: all 0.1s;
+}
+
+#genera-pdf-btn:hover {
+  box-shadow: 0px 0px 2px rgb(133, 133, 133);
+}

@@ -1,0 +1,140 @@
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../immagini/hero-image-cogestione.webp");
+}
+
+.mega-container {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.infos-container {
+  max-width: 1140px;
+  margin: -24px auto 64px auto;
+  padding-bottom: 46px;
+  border-bottom: 1px rgb(206, 206, 206) solid;
+}
+.infos-container > h1 {
+  text-align: center;
+  color: var(--first-color);
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.infos-container > p {
+  text-align: center;
+  margin: 0 auto 46px auto;
+  color: var(--title-color);
+  font-size: 18px;
+  max-width: 1040px;
+}
+.steps-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.steps-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.steps-container img {
+  height: 164px;
+  margin-bottom: 15px;
+}
+.steps-container h2 {
+  color: var(--title-color);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container button {
+  padding: 12px 30px;
+  background-color: var(--first-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttons-container button > div {
+  margin-right: 10px;
+}
+
+.buttons-container button:first-child {
+  margin-right: 18px;
+}
+
+.buttons-container button > i {
+  transition: all 0.1s;
+}
+
+.buttons-container button:hover > i {
+  transform: translateX(4px);
+}
+
+.activities-container {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -34px;
+}
+
+.activities-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px rgb(206, 206, 206) solid;
+  padding: 30px 0;
+  border-radius: 10px;
+  background-color: #60a0560f;
+  transition: all 0.15s;
+}
+
+.activities-container img {
+  height: 256px;
+}
+
+.activities-container h2 {
+  font-size: 25px;
+  color: var(--title-color);
+}
+
+.activities-container div:hover {
+  box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 1023px) {
+  .activities-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .activities-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .buttons-container {
+    display: block;
+  }
+
+  .buttons-container button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}

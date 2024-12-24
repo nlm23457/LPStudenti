@@ -1,0 +1,30 @@
+body {
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.account-info {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+button {
+  display: block;
+  padding: 8px 20px;
+  margin: 28px auto 50px auto;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgb(214, 44, 44);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 2px rgb(133, 133, 133);
+}

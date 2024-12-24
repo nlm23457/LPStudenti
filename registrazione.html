@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/registrazione.css" />
+
+    <link rel="icon" href="immagini/logo-alto.jpg" />
+    <title>LPStudenti - Registrazione</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo"
+          ><img src="immagini/logo.png" alt=""
+        /></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">News</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="cogestione.html" class="nav__link">Cogestione</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Login button -->
+          <a href="registrazione.html"
+            ><i class="ri-user-line nav__login" id="login-btn"></i
+          ></a>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="log-in-container" id="signup" style="display: none">
+      <h1 class="form-title">
+        <span class="green-color">Registrati</span> a LPS
+      </h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display: none"></div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="text"
+            id="fName"
+            placeholder="Nome"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="text"
+            id="lName"
+            placeholder="Cognome"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="text"
+            id="lGrade"
+            placeholder="Classe"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="email"
+            id="rEmail"
+            placeholder="Email scolastica"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="password"
+            id="rPassword"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="input-group checkbox-group">
+          <input type="checkbox" id="acceptTerms" required />
+          <label for="acceptTerms">
+            Accetto i
+            <a href="documenti-legali/termini-e-condizioni.pdf" target="_blank"
+              >Termini di Servizio</a
+            >
+          </label>
+        </div>
+
+        <div class="input-group checkbox-group">
+          <input type="checkbox" id="acceptPrivacy" required />
+          <label for="acceptPrivacy">
+            Accetto la
+            <a href="documenti-legali/privacy-policy.pdf" target="_blank"
+              >Privacy Policy</a
+            >
+          </label>
+        </div>
+
+        <button class="btn" id="submitSignUp">Registrati</button>
+      </form>
+      <div class="links">
+        <p>Ti sei già accreditato? <span id="signInButton">Accedi</span></p>
+      </div>
+    </div>
+
+    <div class="log-in-container" id="signIn">
+      <h1 class="form-title"><span class="green-color">Accedi</span> a LPS</h1>
+      <form method="post" action="">
+        <div id="signInMessage" class="messageDiv" style="display: none"></div>
+
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="email"
+            id="email"
+            placeholder="Email scolastica"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            class="input-field"
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <button class="btn" id="submitSignIn">Accedi</button>
+      </form>
+      <div class="links">
+        <p>
+          Non hai ancora un account? <span id="signUpButton">Registrati</span>
+        </p>
+      </div>
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer>
+      <p>Made with ❤️ by Pasteur Dev Team</p>
+      <div class="legale">
+        <p>
+          <a href="documenti-legali/privacy-policy.pdf">Privacy Policy</a>
+        </p>
+        <p id="separatore">-</p>
+        <p>
+          <a href="documenti-legali/cookie-policy.pdf">Cookie Policy</a>
+        </p>
+        <p id="separatore">-</p>
+        <p>
+          <a href="documenti-legali/termini-e-condizioni.pdf"
+            >Termini e condizioni</a
+          >
+        </p>
+      </div>
+      <div class="social-container">
+        <a href="https://www.instagram.com/liceolouispasteur_/"
+          ><img src="immagini/instagram-image.webp" alt="link-social-instagram"
+        /></a>
+        <a href="mailto: pasteur.studenti@gmail.com"
+          ><img src="immagini/email-image.png" alt="link-indirizzo-email"
+        /></a>
+      </div>
+    </footer>
+    <script type="module" src="js/registrazione.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
