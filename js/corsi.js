@@ -39,17 +39,10 @@ const L1_corsiElenco = [
     limite: "25",
   },
   {
-    id: "L1_3_CERAFOGLI",
-    nome: "Analisi 1 e Problemi da 1MLN$",
-    relatore: "Andrea Cerafogli",
-    aula: "3-II",
-    limite: "25",
-  },
-  {
-    id: "L1_4_CERASE",
-    nome: "Regolamento Calcistico e Arbitraggio",
-    relatore: "Francesco Cerase",
-    aula: "4-II",
+    id: "L1_5_CERASE",
+    nome: "Autodifesa",
+    relatore: "Maria Guerrera",
+    aula: "5-II",
     limite: "25",
   },
   {
