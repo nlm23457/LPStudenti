@@ -29,121 +29,7 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 //****************************************************** */
-
-const L1_corsiElenco = [
-  {
-    id: "L1_1_TATONE",
-    nome: "Gli Scacchi per Tutti",
-    relatore: "Emanuele Tatone",
-    aula: "1-II",
-    limite: "25",
-  },
-  {
-    id: "L1_5_CERASE",
-    nome: "Autodifesa",
-    relatore: "Maria Guerrera",
-    aula: "5-II",
-    limite: "25",
-  },
-  {
-    id: "L1_8_DEVACA",
-    nome: "Origami",
-    relatore: "Giulio Cabeza de Vaca",
-    aula: "8-II",
-    limite: "25",
-  },
-  {
-    id: "L1_11_MASCOLI",
-    nome: "L'Onda di Hokusay",
-    relatore: "Alice Mascoli",
-    aula: "11-II",
-    limite: "25",
-  },
-  {
-    id: "L1_12_SEVERINI",
-    nome: "Introduzione alla Subacquea",
-    relatore: "Matteo Severini",
-    aula: "12-II",
-    limite: "25",
-  },
-  {
-    id: "L1_14_BUFALINO",
-    nome: "Reazione a Catena",
-    relatore: "Emma Bufalino",
-    aula: "14-II",
-    limite: "25",
-  },
-  {
-    id: "L1_17_IADELUCA",
-    nome: "Corso sul fumetto",
-    relatore: "Alice Iadeluca",
-    aula: "17-II",
-    limite: "25",
-  },
-  {
-    id: "L1_20_NERI",
-    nome: "Pausa Arte & Artigianato",
-    relatore: "Giorgia Neri",
-    aula: "20-II",
-    limite: "25",
-  },
-  {
-    id: "L1_22_CHITTARO",
-    nome: "Indovina la Canzone",
-    relatore: "Camilla Chittaro",
-    aula: "22-III",
-    limite: "25",
-  },
-  {
-    id: "L1_25_ASCANIO",
-    nome: "Chi vuole essere milionario",
-    relatore: "Marco Ascanio",
-    aula: "25-III",
-    limite: "25",
-  },
-  {
-    id: "L1_31_BULJBASIC",
-    nome: "Pop Culture",
-    relatore: "Alisa Buljbasic",
-    aula: "31-IV",
-    limite: "25",
-  },
-  {
-    id: "L1_32_DELLEVILLE",
-    nome: "Il cubo di Rubik",
-    relatore: "Marco delle Ville",
-    aula: "32-IV",
-    limite: "25",
-  },
-  {
-    id: "L1_34_ZARRATTI",
-    nome: "Balli di Gruppo 2",
-    relatore: "M. Zarratti",
-    aula: "34-IV",
-    limite: "25",
-  },
-  {
-    id: "L1_35_GALIETI",
-    nome: "Armocromia e Skincare",
-    relatore: "Giada Galieti",
-    aula: "35-IV",
-    limite: "25",
-  },
-  {
-    id: "L1_38_FEDERICI",
-    nome: "Chitarra",
-    relatore: "E. Federici",
-    aula: "38-IV",
-    limite: "25",
-  },
-  {
-    id: "L1_45_COTA",
-    nome: "Ascoltiamo e non Giudichiamo",
-    relatore: "Arianna Cota",
-    aula: "45-IV",
-    limite: "25",
-  },
-];
+import L1_corsiElenco from "./dati.js";
 
 // COLORA IL CORSO SELEZIONATO E NASCONDE GLI ALTRI CORSI
 // ***************************************************** */
@@ -184,7 +70,7 @@ async function aggiornaColoreCorsi() {
       const partecipanti = corsoData.partecipanti || [];
 
       // Cambia il colore di sfondo se i partecipanti superano 20
-      if (partecipanti.length > 24) {
+      if (partecipanti.length > 0) {
         corso.style.backgroundColor = "red";
         corso.style.borderColor = "red";
         corso.style.color = "white";
@@ -227,7 +113,7 @@ async function iscriviAlCorso(corsoId, userData) {
   const corsoData = corsoSnap.data();
   const partecipanti = corsoData.partecipanti || [];
 
-  if (partecipanti.length >= 24) {
+  if (partecipanti.length >= 0) {
     alert("Il corso è già pieno (max 20 partecipanti).");
     return;
   }
