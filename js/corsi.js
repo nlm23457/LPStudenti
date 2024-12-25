@@ -29,7 +29,8 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 //****************************************************** */
-import L1_corsiElenco from "./dati.js";
+const oraGiorno = document.querySelector("#indicator").textContent;
+import L1_corsiElenco from "./dati.js"; // Caricherà L1_corsiElenco
 
 // COLORA IL CORSO SELEZIONATO E NASCONDE GLI ALTRI CORSI
 // ***************************************************** */
