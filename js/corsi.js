@@ -29,8 +29,12 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 //****************************************************** */
-const oraGiorno = document.querySelector("#indicator").textContent;
-import L1_corsiElenco from "./dati.js"; // Caricherà L1_corsiElenco
+import * as dati from "./datiMartedi.js"; // Importa tutto come un oggetto
+
+const oraGiorno = document.querySelector("#indicator").textContent.trim();
+
+const oggettoRichiesto = dati[`${oraGiorno}_corsiElenco`];
+console.log(oggettoRichiesto);
 
 // COLORA IL CORSO SELEZIONATO E NASCONDE GLI ALTRI CORSI
 // ***************************************************** */
@@ -63,7 +67,7 @@ async function aggiornaColoreCorsi() {
 
   for (const corso of corsi) {
     const corsoId = corso.id;
-    const corsoRef = doc(db, "L1_CORSI", corsoId);
+    const corsoRef = doc(db, `${oraGiorno}_CORSI`, corsoId);
     const corsoSnap = await getDoc(corsoRef);
 
     if (corsoSnap.exists()) {
@@ -90,7 +94,7 @@ async function aggiornaColoreCorsi() {
 // ISCRIVE L'UTENTE AL CORSO (O LO CREA SE NON ESISTE)
 // ***************************************************** */
 async function iscriviAlCorso(corsoId, userData) {
-  const corsoRef = doc(db, "L1_CORSI", corsoId);
+  const corsoRef = doc(db, `${oraGiorno}_CORSI`, corsoId);
   const corsoSnap = await getDoc(corsoRef);
 
   // Recupero delle informazioni dal DOM
@@ -177,7 +181,7 @@ buttons.forEach((button) => {
 });
 
 async function cancellaDalCorso(corsoId, userEmail) {
-  const corsoRef = doc(db, "L1_CORSI", corsoId);
+  const corsoRef = doc(db, `${oraGiorno}_CORSI`, corsoId);
   const corsoSnap = await getDoc(corsoRef);
 
   if (!corsoSnap.exists()) {
@@ -248,10 +252,10 @@ onAuthStateChanged(auth, async (user) => {
     let isIscritto = false; // Per tracciare l'iscrizione
 
     // Controlla per ogni corso se l'utente è iscritto
-    for (const corso of L1_corsiElenco) {
+    for (const corso of oggettoRichiesto) {
       const corsoID = corso.id;
       console.log(corsoID);
-      const corsoRef = doc(db, "L1_CORSI", corsoID);
+      const corsoRef = doc(db, `${oraGiorno}_CORSI`, corsoID);
       const corsoSnap = await getDoc(corsoRef);
       const corsoData = corsoSnap.data();
       const partecipanti = corsoData.partecipanti || [];
