@@ -31,23 +31,41 @@ const auth = getAuth(app);
 //****************************************************** */
 import * as dati from "./datiMartedi.js"; // Importa tutto come un oggetto
 
-const aperturaIscrizioni = new Date("2024-12-29T20:00:00Z"); // Ora in UTC
+// // Data di apertura delle iscrizioni in UTC
+// const aperturaIscrizioni = new Date("2024-12-29T08:45:00Z"); // Ora di apertura in UTC
+// console.log("Orario di apertura (UTC):", aperturaIscrizioni);
 
-fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
-  .then((response) => response.json())
-  .then((data) => {
-    const oraCorrente = new Date(data.dateTime); // Ora corrente in UTC
-    if (oraCorrente < aperturaIscrizioni) {
-      // Reindirizza alla pagina di attesa
-      window.location.href = "../attesa.html";
-    } else {
-      // Procedi con il caricamento normale
-      console.log("Le iscrizioni sono aperte!");
-    }
-  })
-  .catch((error) => {
-    console.error("Errore nel recuperare l'orario globale:", error);
-  });
+// // Recupera l'ora corrente da un'API globale
+// fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Errore nella risposta dell'API");
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//     // Converte l'ora corrente restituita dall'API
+//     const oraCorrente = new Date(data.dateTime);
+
+//     console.log("Ora corrente (UTC):", oraCorrente);
+//     console.log("Orario apertura (UTC):", aperturaIscrizioni);
+
+//     // Controlla se l'ora corrente è antecedente all'apertura
+//     if (oraCorrente < aperturaIscrizioni) {
+//       console.log("Le iscrizioni non sono ancora aperte. Reindirizzamento...");
+//       // Reindirizza alla pagina di attesa
+//       window.location.href = "../attesa.html";
+//     } else {
+//       console.log(
+//         "Le iscrizioni sono aperte! Procedi con il caricamento normale."
+//       );
+//     }
+//   })
+//   .catch((error) => {
+//     // Gestisce eventuali errori durante la chiamata API
+//     console.error("Errore nel recuperare l'orario globale:", error);
+//     alert("Impossibile verificare l'orario globale. Riprovare più tardi.");
+//   });
 
 const oraGiorno = document.querySelector("#indicator").textContent.trim();
 
