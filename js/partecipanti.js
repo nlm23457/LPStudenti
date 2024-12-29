@@ -48,20 +48,20 @@ function sanitizeInput(input) {
 
 // Funzione per mostrare i partecipanti in una tabella HTML
 async function mostraPartecipanti(corsoId) {
-  const corsoRef = doc(db, "L1_CORSI", corsoId);
+  const prefisso = corsoId.split("_")[0];
+  const corsoRef = doc(db, `${prefisso}_CORSI`, corsoId);
   const corsoSnap = await getDoc(corsoRef);
 
   if (corsoSnap.exists()) {
     const corsoData = corsoSnap.data();
-    const partecipanti = corsoData.partecipanti || [];
-
-    console.log(partecipanti);
     console.log(corsoData);
+    const partecipanti = corsoData.partecipanti || [];
+    console.log(partecipanti);
 
     // Recupera il nome del corso, il relatore e la classe
-    nomeCorso = corsoData.titolo.toLowerCase() || corsoId;
-    relatore = corsoData.relatore || "Relatore sconosciuto";
-    classe = corsoData.classe || "Classe non specificata";
+    // nomeCorso = corsoData.titolo.toLowerCase() || corsoId;
+    // relatore = corsoData.relatore || "Relatore sconosciuto";
+    // classe = corsoData.classe || "Classe non specificata";
 
     // Aggiorna il titolo del documento HTML
     document.title = `Elenco partecipanti ${nomeCorso}`;
