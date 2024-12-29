@@ -147,6 +147,13 @@ const L1_corsiElenco = [
     limite: "25",
   },
   {
+    id: "L1_44_NATALI",
+    nome: "Orientamento Medicina",
+    relatore: "Giuliano Natali",
+    aula: "44-IV",
+    limite: "25",
+  },
+  {
     id: "L1_ASTUDIO_1",
     nome: "Aula Studio 1",
     relatore: "None",
@@ -479,6 +486,13 @@ const L3_corsiElenco = [
     nome: "Programmazione in Phyton",
     relatore: "Davide Moriello",
     aula: "INF-I",
+    limite: "25",
+  },
+  {
+    id: "L3_44_NATALI",
+    nome: "Pillole di Medicina",
+    relatore: "Giuliano Natali",
+    aula: "44-IV",
     limite: "25",
   },
   {

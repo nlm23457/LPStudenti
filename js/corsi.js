@@ -29,11 +29,10 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 //****************************************************** */
-import * as dati from "./datiMartedi.js"; // Importa tutto come un oggetto
 
 // Data di apertura delle iscrizioni in UTC
-const aperturaIscrizioni = new Date("2024-12-29T08:45:00Z"); // Ora di apertura in UTC
-console.log("Orario di apertura (UTC):", aperturaIscrizioni);
+const aperturaIscrizioni = new Date("2024-12-29T20:00:00Z"); // Ora di apertura in UTC
+console.log("Orario di apertura (UTC):", aperturaIscrizioni.toISOString()); // Stampa sempre in UTC
 
 // Recupera l'ora corrente da un'API globale
 fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
@@ -44,14 +43,20 @@ fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
     return response.json();
   })
   .then((data) => {
-    // Converte l'ora corrente restituita dall'API
-    const oraCorrente = new Date(data.dateTime);
+    // Recuperiamo l'orario corrente fornito dall'API
+    let oraCorrente = new Date(data.dateTime);
 
-    console.log("Ora corrente (UTC):", oraCorrente);
-    console.log("Orario apertura (UTC):", aperturaIscrizioni);
+    // Aggiungiamo manualmente 2 ore per correggere il fuso orario (Italia in inverno)
+    oraCorrente.setHours(oraCorrente.getHours() + 2);
 
-    // Controlla se l'ora corrente è antecedente all'apertura
-    if (oraCorrente < aperturaIscrizioni) {
+    console.log(
+      "Ora corrente (corretta con +2 ore):",
+      oraCorrente.toISOString()
+    );
+    console.log("Orario apertura (UTC):", aperturaIscrizioni.toISOString());
+
+    // Confrontiamo i timestamp in millisecondi
+    if (oraCorrente.getTime() < aperturaIscrizioni.getTime()) {
       console.log("Le iscrizioni non sono ancora aperte. Reindirizzamento...");
       // Reindirizza alla pagina di attesa
       window.location.href = "../attesa.html";
@@ -66,6 +71,8 @@ fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
     console.error("Errore nel recuperare l'orario globale:", error);
     alert("Impossibile verificare l'orario globale. Riprovare più tardi.");
   });
+
+import * as dati from "./datiMartedi.js"; // Importa tutto come un oggetto
 
 const oraGiorno = document.querySelector("#indicator").textContent.trim();
 
