@@ -30,47 +30,47 @@ const auth = getAuth(app);
 
 //****************************************************** */
 
-// // Data di apertura delle iscrizioni in UTC
-// const aperturaIscrizioni = new Date("2024-12-29T20:00:00Z"); // Ora di apertura in UTC
-// console.log("Orario di apertura (UTC):", aperturaIscrizioni.toISOString()); // Stampa sempre in UTC
+// Data di apertura delle iscrizioni in UTC
+const aperturaIscrizioni = new Date("2024-12-29T20:00:00Z"); // Ora di apertura in UTC
+console.log("Orario di apertura (UTC):", aperturaIscrizioni.toISOString()); // Stampa sempre in UTC
 
-// // Recupera l'ora corrente da un'API globale
-// fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
-//   .then((response) => {
-//     if (!response.ok) {
-//       throw new Error("Errore nella risposta dell'API");
-//     }
-//     return response.json();
-//   })
-//   .then((data) => {
-//     // Recuperiamo l'orario corrente fornito dall'API
-//     let oraCorrente = new Date(data.dateTime);
+// Recupera l'ora corrente da un'API globale
+fetch("https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Errore nella risposta dell'API");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    // Recuperiamo l'orario corrente fornito dall'API
+    let oraCorrente = new Date(data.dateTime);
 
-//     // Aggiungiamo manualmente 2 ore per correggere il fuso orario (Italia in inverno)
-//     oraCorrente.setHours(oraCorrente.getHours() + 2);
+    // Aggiungiamo manualmente 2 ore per correggere il fuso orario (Italia in inverno)
+    oraCorrente.setHours(oraCorrente.getHours() + 2);
 
-//     console.log(
-//       "Ora corrente (corretta con +2 ore):",
-//       oraCorrente.toISOString()
-//     );
-//     console.log("Orario apertura (UTC):", aperturaIscrizioni.toISOString());
+    console.log(
+      "Ora corrente (corretta con +2 ore):",
+      oraCorrente.toISOString()
+    );
+    console.log("Orario apertura (UTC):", aperturaIscrizioni.toISOString());
 
-//     // Confrontiamo i timestamp in millisecondi
-//     if (oraCorrente.getTime() < aperturaIscrizioni.getTime()) {
-//       console.log("Le iscrizioni non sono ancora aperte. Reindirizzamento...");
-//       // Reindirizza alla pagina di attesa
-//       window.location.href = "../attesa.html";
-//     } else {
-//       console.log(
-//         "Le iscrizioni sono aperte! Procedi con il caricamento normale."
-//       );
-//     }
-//   })
-//   .catch((error) => {
-//     // Gestisce eventuali errori durante la chiamata API
-//     console.error("Errore nel recuperare l'orario globale:", error);
-//     alert("Impossibile verificare l'orario globale. Riprovare più tardi.");
-//   });
+    // Confrontiamo i timestamp in millisecondi
+    if (oraCorrente.getTime() < aperturaIscrizioni.getTime()) {
+      console.log("Le iscrizioni non sono ancora aperte. Reindirizzamento...");
+      // Reindirizza alla pagina di attesa
+      window.location.href = "../attesa.html";
+    } else {
+      console.log(
+        "Le iscrizioni sono aperte! Procedi con il caricamento normale."
+      );
+    }
+  })
+  .catch((error) => {
+    // Gestisce eventuali errori durante la chiamata API
+    console.error("Errore nel recuperare l'orario globale:", error);
+    alert("Impossibile verificare l'orario globale. Riprovare più tardi.");
+  });
 
 import * as dati from "./datiMartedi.js"; // Importa tutto come un oggetto
 
