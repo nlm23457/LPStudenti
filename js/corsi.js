@@ -279,6 +279,12 @@ visualizzaUtenteButtons.forEach((button) => {
   });
 });
 
+const vediBottone = function () {
+  visualizzaUtenteButtons.forEach((button) => {
+    button.style.display = "block";
+  });
+};
+
 onAuthStateChanged(auth, async (user) => {
   const corsi = document.querySelectorAll(".course-container");
 
@@ -331,3 +337,5 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
+
+vediBottone();
