@@ -1,7 +1,3 @@
-body {
-  display: none;
-}
-
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../immagini/hero-image-cogestione.webp");
@@ -12,10 +8,7 @@ body {
   grid-template-columns: 1fr;
   gap: 10px 10px;
   margin: 30px 30px 100px 30px;
-}
-
-.course-container {
-  display: none;
+  color: black;
 }
 
 .courses-general-title {
