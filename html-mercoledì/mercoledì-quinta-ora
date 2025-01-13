@@ -159,47 +159,111 @@
     </h2>
 
     <section class="courses-container">
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSekHn4muPsyArLtRc1rxWdialLjAzAnAviNIRNRso-RhG3GPA/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Corso sul Fumetto</u></h3>
-          <p>🏫 <b>Aula 17</b> - III Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Iadeluca</p>
+          <h3><u>Gli scacchi per tutti</u></h3>
+          <p>🏫 <b>Aula 1</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Mereuta</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScKOLKkgGNJ2_YD_q206KtnYXN44X8q1UH6xMAsAL2njBF9Og/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Balli di Gruppo 1</u></h3>
+          <h3><u>Regolamento calcistico e arbitraggio</u></h3>
+          <p>🏫 <b>Aula 4</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Cerase</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEons-OsF3fhdqFciGvkcWOxsgLBJ4c9QQWNWLQR3VQYkJsg/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>L'Onda di Hokusay</u></h3>
+          <p>🏫 <b>Aula 11</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Mascoli</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScUHcYMijnEV2hntRiWj91KP3DtG5fJLsYmmNVK9Fdr623Zmw/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Introduzione alla subaquea</u></h3>
+          <p>🏫 <b>Aula 12</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Severini</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMDBjR5pupvlymKBNRiovrlAzaMd7gSNGWHUmr7qjz1DsoyA/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Il funzionamento dei motori</u></h3>
+          <p>🏫 <b>Aula 13</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Amoroso</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7v0OdRrwBWH2Glmk5zTEICeDS5MTwO1lCQBsSu5GpQeTEqQ/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Reazione a catena</u></h3>
+          <p>🏫 <b>Aula 14</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Bufalino</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScGHJ9gHIZz7gveJ4Gv8jW7GXoFGFIkDJffhcszuGKLT7A2tA/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Giochi di carte</u></h3>
+          <p>🏫 <b>Aula 15</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Del Greco</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqeXunq5s3-NN7-zkNUdvLimkQaQa2Bkkmthy5BeLGhVF7xg/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Tecniche di memoria</u></h3>
+          <p>🏫 <b>Aula 16</b> - III Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Di Silvio</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNi0BSKb38p9FhJxV39q8z-lYSPic9g2EIJD240UmFuoJeEw/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Balli di gruppo 1</u></h3>
           <p>🏫 <b>Aula 19</b> - III Padiglione</p>
           <p>🗣️<b>Relatore:</b> Bianchi</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScc265nFY28VBHWTHbtZwguptev4kUVtC--XY2aQ4F7wjP-0Q/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Corso di Carte</u></h3>
+          <h3><u>Pausa arte & artigianato</u></h3>
+          <p>🏫 <b>Aula 20</b> - III Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Neri</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeVIoJdcltalmv6jvUUncMWv29ilcySUjSbOjNhyQnphwbWA/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Corso di carte</u></h3>
           <p>🏫 <b>Aula 21</b> - III Padiglione</p>
           <p>🗣️<b>Relatore:</b> Cialfi</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7MDYiDEpeVNHuEQxJJT5xkz_2kAoCq54kaXZIKvxh8lHHsQ/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Indovina la Canzone</u></h3>
-          <p>🏫 <b>Aula 22</b> - III Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Chittaro</p>
+          <h3><u>La politica studentesca dal '68 ad oggi</u></h3>
+          <p>🏫 <b>Aula 23</b> - III Padiglione</p>
+          <p>🗣️<b>Relatore:</b> D'Achille</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc26Wif6UpUTzOCv4A695p0rVzas01k9ztlDrGuko8PNj2HjA/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Fight List</u></h3>
+          <h3><u>Fight list</u></h3>
           <p>🏫 <b>Aula 24</b> - III Padiglione</p>
           <p>🗣️<b>Relatore:</b> Romano</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3XFSUveKmdUopX9THf96o1xlXs6orrD3_ivjEFzTF9czQlg/viewform?usp=dialog">
         <div class="course-container">
           <h3><u>Carte</u></h3>
           <p>🏫 <b>Aula 27</b> - III Padiglione</p>
@@ -207,23 +271,23 @@
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe330bMSLLAn0K3uXEH5N3fI7L4NCezl1y4BgRit4jjtbOXQQ/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Pop Culture</u></h3>
+          <h3><u>Corso di approfondimento su Shrek</u></h3>
+          <p>🏫 <b>Aula 30</b> - IV Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Vannozzi</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScXQcw3HKNytbdc34leSDELn-Bs15ZCexXFe5DlSUNybMGz0w/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Pop colture</u></h3>
           <p>🏫 <b>Aula 31</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Basile</p>
+          <p>🗣️<b>Relatore:</b> Buljubasic</p>
         </div>
       </a>
 
-      <a href="">
-        <div class="course-container">
-          <h3><u>Armocromia e Skincare</u></h3>
-          <p>🏫 <b>Aula 35</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Galieti</p>
-        </div>
-      </a>
-
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHGZLW0qBC6Sy_NPEcbTQAIWCOA5_4L8OgxGrN8o_YMYYvlQ/viewform?usp=dialog">
         <div class="course-container">
           <h3><u>Chitarra</u></h3>
           <p>🏫 <b>Aula 38</b> - IV Padiglione</p>
@@ -231,23 +295,7 @@
         </div>
       </a>
 
-      <a href="">
-        <div class="course-container">
-          <h3><u>Storia dell'aviazione militare moderna</u></h3>
-          <p>🏫 <b>Aula 39</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Covone</p>
-        </div>
-      </a>
-
-      <a href="">
-        <div class="course-container">
-          <h3><u>Genocidi nel mondo e nella storia</u></h3>
-          <p>🏫 <b>Aula 40</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Castigliani</p>
-        </div>
-      </a>
-
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3-62ZS0DsplhoqU6kI-BXNh1Qo1f28b0fRh8e3qBmv89Nyw/viewform?usp=dialog">
         <div class="course-container">
           <h3><u>Teatro</u></h3>
           <p>🏫 <b>Aula 41</b> - IV Padiglione</p>
@@ -255,27 +303,59 @@
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5Z1Z_cXKMMPpb3w-wGUukBCznWfn6EiVndHhMZxJJ88p3bw/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Make it Meme</u></h3>
+          <h3><u>Make it make</u></h3>
           <p>🏫 <b>Aula 42</b> - IV Padiglione</p>
           <p>🗣️<b>Relatore:</b> Andrei</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqsduDErwCgs1haOn3MIhZ-Ub6zJyHtzOhaKqCMwZZYT3GA/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Lupus in Fabula</u></h3>
-          <p>🏫 <b>Aula 44</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Morbidoli</p>
+          <h3><u>Avanti un altro</u></h3>
+          <p>🏫 <b>Lab. Dis. 1</b> - IV Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Gubbiotti</p>
         </div>
       </a>
 
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScRM9UT3MTfd6ANb1CvpSCrJ_wjfpUgt1JfwD8WFLThYCbOTA/viewform?usp=dialog">
         <div class="course-container">
-          <h3><u>Ascoltiamo e non Giudichiamo</u></h3>
-          <p>🏫 <b>Aula 45</b> - IV Padiglione</p>
-          <p>🗣️<b>Relatore:</b> Cota</p>
+          <h3><u>Informatica</u></h3>
+          <p>🏫 <b>Lab. Informatica</b> - I Padiglione</p>
+          <p>🗣️<b>Relatore:</b> Mancini</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSddan0tZilN7VXZn69QkhgFPk3tQvuMYoAmR3_l-mGzl78V3g/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Aula studio 1</u></h3>
+          <p>🏫 <b>Aula 10</b> - II Padiglione</p>
+          <p>🗣️<b>Relatore:</b> None</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqw-StPRuMC8Bo8vKjQQF5NAx_UUTg07BAwg4Rm3c23HcysQ/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Aula studio 2</u></h3>
+          <p>🏫 <b>Aula 26</b> - III Padiglione</p>
+          <p>🗣️<b>Relatore:</b> None</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh9Y7XvmOBMqXooaPB2y3af71CKcI8rGhX-ukz-F-RbPOFWA/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Aula studio 3</u></h3>
+          <p>🏫 <b>Aula 33</b> - IV Padiglione</p>
+          <p>🗣️<b>Relatore:</b> None</p>
+        </div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSddGYW2kvWZ8MxEib0ObldWRFZ9yjWCFWO-HBUtwpqWx96nWQ/viewform?usp=dialog">
+        <div class="course-container">
+          <h3><u>Aula studio 4</u></h3>
+          <p>🏫 <b>Aula 37</b> - IV Padiglione</p>
+          <p>🗣️<b>Relatore:</b> None</p>
         </div>
       </a>
     </section>
